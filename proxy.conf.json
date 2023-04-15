@@ -1,0 +1,9 @@
+{
+    "/bigbluebutton/*": {
+      "target": "https://test-install.blindsidenetworks.com",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+}
+  

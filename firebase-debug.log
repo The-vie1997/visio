@@ -1,0 +1,83 @@
+[debug] [2023-04-15T17:46:18.396Z] ----------------------------------------------------------------------
+[debug] [2023-04-15T17:46:18.398Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DANSTEVE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-15T17:46:18.398Z] CLI Version:   11.27.0
+[debug] [2023-04-15T17:46:18.399Z] Platform:      win32
+[debug] [2023-04-15T17:46:18.399Z] Node Version:  v18.15.0
+[debug] [2023-04-15T17:46:18.400Z] Time:          Sat Apr 15 2023 19:46:18 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-04-15T17:46:18.400Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-15T17:46:18.407Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-15T17:46:18.408Z] > authorizing via signed-in user (dansteve580@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DANSTEVE\Documents\angular\visio1
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-04-15T17:47:01.737Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-04-15T17:47:01.737Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"danstevevisio","name":"visio"}
+[debug] [2023-04-15T17:47:02.559Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-04-15T17:47:02.560Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9150494720729382611"}
+[debug] [2023-04-15T17:47:02.562Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 [none]
+[debug] [2023-04-15T17:47:03.350Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 200
+[debug] [2023-04-15T17:47:03.350Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 {"name":"operations/cp.9150494720729382611"}
+[debug] [2023-04-15T17:47:03.855Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:03.857Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 [none]
+[debug] [2023-04-15T17:47:04.615Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 200
+[debug] [2023-04-15T17:47:04.616Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 {"name":"operations/cp.9150494720729382611","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-04-15T17:47:05.624Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:05.626Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 [none]
+[debug] [2023-04-15T17:47:06.417Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 200
+[debug] [2023-04-15T17:47:06.417Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9150494720729382611 {"name":"operations/cp.9150494720729382611","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"204847330401","projectId":"danstevevisio","lifecycleState":"ACTIVE","name":"visio","createTime":"2023-04-15T17:47:03.504Z"}}
+[debug] [2023-04-15T17:47:06.423Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/danstevevisio:addFirebase [none]
+[debug] [2023-04-15T17:47:09.703Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/danstevevisio:addFirebase 200
+[debug] [2023-04-15T17:47:09.703Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/danstevevisio:addFirebase {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy"}
+[debug] [2023-04-15T17:47:09.704Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy [none]
+[debug] [2023-04-15T17:47:10.334Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy 200
+[debug] [2023-04-15T17:47:10.334Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy"}
+[debug] [2023-04-15T17:47:10.840Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:10.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy [none]
+[debug] [2023-04-15T17:47:11.457Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy 200
+[debug] [2023-04-15T17:47:11.457Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy"}
+[debug] [2023-04-15T17:47:12.472Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:12.474Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy [none]
+[debug] [2023-04-15T17:47:12.931Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy 200
+[debug] [2023-04-15T17:47:12.931Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy"}
+[debug] [2023-04-15T17:47:14.938Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:14.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy [none]
+[debug] [2023-04-15T17:47:15.427Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy 200
+[debug] [2023-04-15T17:47:15.428Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy"}
+[debug] [2023-04-15T17:47:19.442Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-15T17:47:19.445Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy [none]
+[debug] [2023-04-15T17:47:20.094Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy 200
+[debug] [2023-04-15T17:47:20.095Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy {"name":"operations/workflows/ZWQ4NTFlNzctODk4Yi00ZTUwLWFmY2UtODYwMDc5ZjdmNmQy","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"danstevevisio","projectNumber":"204847330401","displayName":"visio","name":"projects/danstevevisio","resources":{"hostingSite":"danstevevisio"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: danstevevisio
+[info]    - Project Name: visio
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/danstevevisio/overview
+[info] i  Using project danstevevisio (visio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
